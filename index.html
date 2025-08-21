@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Money Expense Tracker</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <!-- Budget Box -->
+      <div class="box">
+        <h3>Set Budget</h3>
+        <p class="error" id="budget-error">Value cannot be empty or negative</p>
+        <input type="number" id="total-amount" placeholder="Enter Total Amount">
+        <button class="submit" id="total-amount-button">Set Budget</button>
+      </div>
+
+      <!-- Expense Box -->
+      <div class="box">
+        <h3>Add Expense</h3>
+        <p class="error" id="product-error">Values cannot be empty</p>
+        <input type="text" id="product-title" placeholder="Enter Title of Product">
+        <input type="number" id="user-amount" placeholder="Enter Cost of Product">
+        <button class="submit" id="check-amount">Add Expense</button>
+      </div>
+    </div>
+
+    <!-- Summary -->
+    <div class="output-container">
+      <div>
+        <p>Total Budget</p>
+        <span id="amount">0</span>
+      </div>
+      <div>
+        <p>Expenses</p>
+        <span id="expenditure-value">0</span>
+      </div>
+      <div>
+        <p>Balance</p>
+        <span id="balance-amount">0</span>
+      </div>
+    </div>
+
+    <!-- Expense List -->
+    <div class="list">
+      <h3>Expense List</h3>
+      <div id="list"></div>
+    </div>
+  </div>
+
+ <script src="script.js"></script>
+</body>
+</html>
